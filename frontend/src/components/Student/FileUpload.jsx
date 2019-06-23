@@ -56,7 +56,7 @@ const FileUpload = () => {
       }
     return (
         <Fragment >
-          <p className = " header mt-2"><b><center><big>Assignment Upload</big></center></b></p>
+          <p className = "header mt-2"><b><center><big>Assignment your Upload</big></center></b></p>
             <div className = "files">
               {message ? <Message msg = {message} /> : null}
                

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import StudentSelectexamComp from './Student.selectexam.comp';
 import EditProfile from './EditProfile';
 import DashBoard from './DashBoard'
+import FileUpload from './FileUpload';
 
 class Home extends Component {
 	render() {
@@ -23,6 +24,11 @@ class Home extends Component {
 									</Link>
 								</li>
 								<li className="navbar-item">
+									<Link to="/students/assignmentUpload" className="nav-link">
+										<b>AssignmentUpload</b>
+									</Link>
+								</li>
+								<li className="navbar-item">
 									<Link to="/students/exams" className="nav-link">
 										<b>Exams</b>
 									</Link>
@@ -40,6 +46,7 @@ class Home extends Component {
 				<Route path="/students/assignments" exact component={StudentSelectexamComp} />
 				<Route path="/students/exams" component={StudentSelectexamComp} />
 				<Route path="/students/edit-profiles" component={EditProfile} />
+				<Route path="/students/assignmentUpload" component={FileUpload} />
 			</Router>
 		);
 	}
