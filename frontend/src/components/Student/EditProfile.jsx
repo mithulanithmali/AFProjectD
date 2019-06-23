@@ -104,10 +104,12 @@ export default class EditProfile extends Component{
 
     render() {
         return (
-            <div className="col-sm bg-light text-dark rounded" style={{marginTop:30}}>
+            <div className="col-sm bg-transparent text-dark rounded" style={{marginTop:30}}>
                 <h3><u><b><i>Edit Profile</i></b></u></h3>
 
                 <div className="container" style={{marginTop:50}}>
+                    <div className = "row">
+                    <div className = "col-md-6">    
                     <form className="form-group" onSubmit={this.onSubmit}>
                         <div className="form-group row">
                             <label className="col-md-6 col-form-label">First Name: </label>
@@ -134,6 +136,13 @@ export default class EditProfile extends Component{
                             <input type="submit" className="btn btn-primary" value="UPDATE"/>
                         </div>
                     </form>
+                </div>
+                <div className = "col-md-6">  
+                    <div className="ab1 col-sm-8 mx-auto">
+                                 <img  className = "image"  />
+                             </div>
+                </div>
+                </div>
                 </div>
             </div>
         );
