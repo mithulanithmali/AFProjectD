@@ -22,7 +22,7 @@ const FileUpload = () => {
           formData.append('file' , file);
 
           try{
-                const res = await axios.post('http://localhost:5000/uploadfile' , formData,{
+                const res = await axios.post('http://localhost:4000/uploadfile' , formData,{
                 
                     headers : {
                         'Content-Type' : 'multipart/form-data'
@@ -56,7 +56,7 @@ const FileUpload = () => {
       }
     return (
         <Fragment >
-          <p className = "header mt-2"><b><center><big>Assignment your Upload</big></center></b></p>
+          <p className = "header mt-2"><b><center><big>Upload Your Assignment</big></center></b></p>
             <div className = "files">
               {message ? <Message msg = {message} /> : null}
                

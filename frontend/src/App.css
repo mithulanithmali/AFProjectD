@@ -1,7 +1,9 @@
+body {
 
-body{
-  background-image: url('')
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .App {
   text-align: center;
 }
@@ -31,13 +33,25 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.navbar-item{
- 
-  text-justify: inter-cluster;
-  left: 30px;
+.image1{
+  position: absolute;
+  background-image: url('./img/uni2.jpg');
+}
+.image{
+  position: absolute;
+  background-image: url('./img/uni2.jpg');
+  top : 20px;
+  left:-10px;
+  right :10px;
+  width: 400px;
+  height: 268px;
+  background-repeat: no-repeat;
+  background-size: contain;
+   
 }
