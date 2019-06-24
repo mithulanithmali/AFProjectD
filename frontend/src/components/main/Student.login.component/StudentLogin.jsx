@@ -85,7 +85,7 @@ export default class LoginOthersComp extends Component {
 
     render() {
         return (
-            <div style={{marginTop: 150, width: 650, height: 200}} className="container bg-dark text-light rounded">
+            <div style={{marginTop: 150, width: 650, height: 200}} className="container bg-light text-dark rounded">
                 <h3> Login</h3>
                 <form style={{top: 20}} onSubmit={this.onSubmit}>
                     <div className="form-group row">

@@ -4,6 +4,7 @@ import LoginOthersComp from "./Student.login.component/StudentLogin";
 import RegisterStudent from "./Student.Register.component/RegisterStudent";
 
 import Home from '../Student/Home';
+import AboutUs from '../Student/AboutUs'
 
 export default class HomeHandler extends Component{
     constructor(props){
@@ -89,7 +90,7 @@ export default class HomeHandler extends Component{
                                 <Link to="/register" className="nav-link"><i><b><i class="fas fa-registered"></i> REGISTER NOW !</b></i></Link>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/register" className="nav-link"><i><b><i class="far fa-address-card"></i> ABOUT US</b></i></Link>
+                                <Link to="/aboutus" className="nav-link"><i><b><i class="far fa-address-card"></i> ABOUT US</b></i></Link>
                             </li>
                             <li className="navbar-item">
                                 <Link onClick={()=>{this.openUserPortal()}} className="nav-link"><i><b><i class="fas fa-user-graduate"></i> STUDENT PORTAL</b></i></Link>
@@ -106,6 +107,7 @@ export default class HomeHandler extends Component{
                 <Route path="/login" exact component={LoginOthersComp} />
                 <Route path="/Student/" exact component={Home} />
                 <Route path="/register" exact component={RegisterStudent} />
+                <Route path="/aboutus" exact component={AboutUs} />
             </Router>
         );
     }

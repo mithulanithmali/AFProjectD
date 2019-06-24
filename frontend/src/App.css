@@ -1,5 +1,5 @@
 body {
-
+  background-image: url('./img/bg2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -54,4 +54,37 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
    
+}
+
+.image2{
+  position: absolute;
+  background-image: url('./img/sllit.jpg');
+  top : 20px;
+  left:-10px;
+  right :10px;
+  width: 450px;
+  height: 236px;
+  background-repeat: no-repeat;
+  background-size: contain;
+   
+}
+
+.image3{
+  position: absolute;
+  background-image: url('./img/sllit2.jpg');
+  top : 20px;
+  left:-10px;
+  right :10px;
+  width: 428px;
+  height: 236px;
+  background-repeat: no-repeat;
+  background-size: contain;
+   
+}
+.bgclr{
+  background-color: darkgrey;
+}
+
+.b1{
+  background-color: burlywood;
 }

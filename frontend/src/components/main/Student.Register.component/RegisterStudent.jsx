@@ -73,17 +73,17 @@ class RegisterStudent extends Component {
 
     render() {
         return (
-            <div style={{marginTop: 150,border: "#c1c1c1 solid 1px",width:650}} className="container bg-dark text-light rounded">
+            <div style={{marginTop: 150,border: "#c1c1c1 solid 1px",width:650}} className=" bgclr container  text-dark rounded">
                 <h3>Register</h3>
                 <form style={{marginTop: 50}} onSubmit={this.onSubmit}>
                     <div className="form-group row">
                         <label className="col-md-6 col-form-label">First Name: </label>
-                        <input type="text" placeholder="John" value={this.state.FirstName}
+                        <input type="text" placeholder="mithula" value={this.state.FirstName}
                                onChange={this.onChangeFName}/>
                     </div>
                     <div className="form-group row">
                         <label className="col-md-6 col-form-label">Last Name: </label>
-                        <input type="text" placeholder="Smith" value={this.state.LastName}
+                        <input type="text" placeholder="nithmali" value={this.state.LastName}
                                onChange={this.onChangeLName}/>
                     </div>
                     <div className="form-group row">
@@ -93,12 +93,12 @@ class RegisterStudent extends Component {
                     </div>
                     <div className="form-group row">
                         <label className="col-md-6 col-form-label">Email: </label>
-                        <input type="email" placeholder="johnsmith@mail.com" value={this.state.Email}
+                        <input type="email" placeholder="mnithmali@gmail.com" value={this.state.Email}
                                onChange={this.onChangeEmail}/>
                     </div>
                     <div className="form-group row">
                         <label className="col-md-6 col-form-label">Password: </label>
-                        <input type="password" placeholder="Password" value={this.state.Password}
+                        <input type="password" placeholder="password" value={this.state.Password}
                                onChange={this.onChangePassword}/>
                     </div>
                     <div style={{marginTop:30,marginLeft: 300}} className="form-group row">
