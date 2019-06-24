@@ -49,7 +49,7 @@ export default class StudentModules extends Component{
         return (
             <div className="container bg-dark text-light rounded">
                 <h3 style={{marginTop:50,marginBottom:20}}><u>Module Overview</u></h3>
-                <table className="table table-hover text-light">
+                <table className=" tablecss table table-bordered table-hover table-striped  table-dark">
                     <thead>
                     <tr>
                         <th>Name</th>

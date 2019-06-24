@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import StudentSelectexamComp from './Student.selectexam.comp';
+import ViewExams from './ViewExams';
 import EditProfile from './EditProfile';
 import DashBoard from './DashBoard'
 import FileUpload from './FileUpload';
@@ -43,8 +43,8 @@ class Home extends Component {
 					</nav>
 				</div>
 				<Route path="/students/" exact component={DashBoard} />
-				<Route path="/students/assignments" exact component={StudentSelectexamComp} />
-				<Route path="/students/exams" component={StudentSelectexamComp} />
+				<Route path="/students/assignments" exact component={ViewExams} />
+				<Route path="/students/exams" component={ViewExams} />
 				<Route path="/students/edit-profiles" component={EditProfile} />
 				<Route path="/students/assignmentUpload" component={FileUpload} />
 			</Router>
